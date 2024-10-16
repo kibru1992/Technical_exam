@@ -1,0 +1,64 @@
+/* App.css */
+
+/* Main container for the app */
+.app-container {
+    display: flex;                  /* Use flexbox to layout children in a row */
+    flex-direction: column;        /* Stack header on top */
+    min-height: 100vh;            /* Full viewport height */
+    background-color: #f4f4f4;    /* Light background color for the entire app */
+}
+
+
+/* Container for sidebar and main content */
+.content-container {
+    display: flex;                 /* Use flexbox to layout sidebar and content side by side */
+    flex: 1;                      /* Take up remaining space */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px;                 /* Fixed width for the sidebar */
+    background-color: #2c3e50;   /* Dark background for the sidebar */
+    color: #ecf0f1;               /* Light text color */
+    min-height: calc(100vh - 70px); /* Full height minus header height */
+    padding: 20px;                /* Padding around sidebar content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;                      /* Take up the remaining space next to the sidebar */
+    padding: 30px;                /* Padding for main content */
+    background-color: #fff;       /* White background for the dashboard */
+    overflow-y: auto;             /* Allow scrolling if content overflows */
+}
+
+/* Header styling */
+.header {
+    background-color: #fff;       /* White background for header */
+    padding: 15px 30px;           /* Padding for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for header */
+    display: flex;                /* Flexbox for header layout */
+    align-items: center;          /* Center items vertically */
+    justify-content: space-between; /* Space between logo, search, and user icon */
+}
+
+/* Additional styles for the header text */
+.header h1 {
+    margin: 0;                    /* Remove default margin */
+    font-size: 1.5rem;            /* Header font size */
+    color: #333;                  /* Dark text color */
+}
+
+/* General body styling */
+body {
+    margin: 0;                    /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set default font for the app */
+}
+
+.dashboard {
+    flex: 1;                      /* Take up the remaining space next to the sidebar */
+    padding: 30px;                /* Padding for main content */
+    background-color: #fff;       /* White background for the dashboard */
+    overflow-y: auto;             /* Allow scrolling if content overflows */
+}
